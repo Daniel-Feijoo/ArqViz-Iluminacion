@@ -1,0 +1,47 @@
+# Unity generated
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+MemoryCaptures/
+Recordings/
+
+# Unity Asset Database / import cache
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# VS / Rider
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+
+# JetBrains
+.idea/
+*.DotSettings.user
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# Asset meta files (keep them)
+# *.meta  <-- NO borrar, Unity los necesita
+
+# Crashes
+crashlytics-build.properties

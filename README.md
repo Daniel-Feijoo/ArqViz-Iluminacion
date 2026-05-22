@@ -1,3 +1,11 @@
+¿Qué sensación queremos generar con la iluminación?
+Buscamos transmitir calidez y habitabilidad. La combinación de luz solar en hora dorada con focos interiores cálidos crea una atmósfera acogedora que invita a recorrer el espacio, reforzando la idea de que la arquitectura no solo se ve, sino que se siente. El contraste entre el exterior luminoso y los focos interiores suaves genera profundidad y jerarquía espacial.
+¿Qué referencias visuales usamos?
+Nos basamos en fotografías de arquitectura residencial minimalista al atardecer, donde la luz natural rasante resalta los volúmenes y proyecta sombras alargadas que definen la forma del edificio. También tomamos como referencia renders arquitectónicos de casas modernas con iluminación interior tipo recessed lighting, donde los focos de techo puntual definen zonas funcionales sin sobrecargar el espacio.
+¿Qué decisión fue la más difícil y por qué?
+La más difícil fue balancear la intensidad de los focos interiores frente a la luz direccional exterior. Si los focos eran muy intensos, el interior se veía sobreexpuesto y artificial. Si eran muy tenues, desaparecían ante la luz solar. La solución fue diferenciar por zona: focos de sala y entrada con mayor rango (5–6 uds.), focos de dormitorio más cálidos y suaves (4 uds.), y focos de mesita casi decorativos (2 uds.), logrando una iluminación estratificada que respeta la escala de cada ambiente.
+
+
 # ArqViz-Iluminacion
 
 Proyecto de visualización arquitectónica desarrollado en **Unity 6000.4.5f1** con **Universal Render Pipeline (URP 17.4.0)**. Incluye una casa moderna construida con primitivos de Unity, controlador FPS, puerta animada e iluminación arquitectónica completa.

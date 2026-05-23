@@ -1,3 +1,20 @@
+Instrucciones para abrir el proyecto : 
+1.- Clonar el repositorio  
+Abre Git Bash o tu terminal y ejecuta:
+"git clone https://github.com/Daniel-Feijoo/ArqViz-Iluminacion.git"
+2.-Abrir Unity Hub  
+Inicia Unity Hub y selecciona “Add” para agregar el proyecto.
+3.-Seleccionar la carpeta del proyecto  
+Busca la carpeta clonada ArqViz-Iluminacion y selecciónala.
+4.-Verificar la versión de Unity  
+Usa Unity 6 URP (según los commits del repositorio). Si no la tienes, instálala desde Unity Hub.
+5.-Abrir el proyecto  
+Haz clic en “Open” y espera a que Unity cargue los paquetes y configuraciones.
+6.-Ejecutar la escena principal  
+En la carpeta Assets, abre la escena principal y presiona Play para visualizar la iluminación.
+
+Integrantes: Christian Castro - Daniel Feijóo - Jose Escobar - Mateo Rodriguez - Kevin Criollo.
+
 ¿Qué sensación queremos generar con la iluminación?
 Buscamos transmitir calidez y habitabilidad. La combinación de luz solar en hora dorada con focos interiores cálidos crea una atmósfera acogedora que invita a recorrer el espacio, reforzando la idea de que la arquitectura no solo se ve, sino que se siente. El contraste entre el exterior luminoso y los focos interiores suaves genera profundidad y jerarquía espacial.
 ¿Qué referencias visuales usamos?
@@ -6,7 +23,7 @@ Nos basamos en fotografías de arquitectura residencial minimalista al atardecer
 La más difícil fue balancear la intensidad de los focos interiores frente a la luz direccional exterior. Si los focos eran muy intensos, el interior se veía sobreexpuesto y artificial. Si eran muy tenues, desaparecían ante la luz solar. La solución fue diferenciar por zona: focos de sala y entrada con mayor rango (5–6 uds.), focos de dormitorio más cálidos y suaves (4 uds.), y focos de mesita casi decorativos (2 uds.), logrando una iluminación estratificada que respeta la escala de cada ambiente.
 
 
-# ArqViz-Iluminacion
+# ArqViz-Iluminacion - Proyecto de Arquitectura
 
 Proyecto de visualización arquitectónica desarrollado en **Unity 6000.4.5f1** con **Universal Render Pipeline (URP 17.4.0)**. Incluye una casa moderna construida con primitivos de Unity, controlador FPS, puerta animada e iluminación arquitectónica completa.
 

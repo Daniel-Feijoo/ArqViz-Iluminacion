@@ -190,13 +190,17 @@ public static class ArqVizInteriorBuilder
         Colis(c, "Col_X2_B",   new Vector3(2f,2f,  13.375f), new Vector3(0.28f,4.5f,5.25f));
         Colis(c, "Col_X2_DT",  new Vector3(2f,3.3f,   10f),  new Vector3(0.28f,1.4f,1.5f));
 
-        // ── Elementos exteriores con colisionador ─────────────────────────
+        // ── Suelo exterior: colisionador explícito (no depende de AgregarColisionadorExistente)
+        // Cubre toda el área exterior donde aparece el jugador (Z[-10,0]) y el jardín
+        Colis(c, "Col_SueloExterior",   new Vector3(0f,  -0.42f, -5f),  new Vector3(40f, 0.5f, 12f));
+        Colis(c, "Col_SueloCesped",     new Vector3(5f,  -0.60f, 12f),  new Vector3(80f, 0.5f, 60f));
+        Colis(c, "Col_SueloCimiento",   new Vector3(0f,  -0.32f,  8f),  new Vector3(21f, 0.3f, 17f));
+        Colis(c, "Col_SueloCimAla",     new Vector3(16f, -0.32f,  7f),  new Vector3(13f, 0.3f, 15f));
+
+        // ── Escalones y plataforma de entrada ────────────────────────────
         AgregarColisionadorExistente("Escalon_1");
         AgregarColisionadorExistente("Escalon_2");
         AgregarColisionadorExistente("Plataforma");
-        AgregarColisionadorExistente("Suelo_Frente");
-        AgregarColisionadorExistente("Suelo_Cesped");
-        AgregarColisionadorExistente("Suelo_Lateral_D");
     }
 
     static void AgregarColisionadorExistente(string nombre)
@@ -774,7 +778,8 @@ public static class ArqVizInteriorBuilder
     static void CrearPlayer()
     {
         var playerGO = new GameObject("Player");
-        playerGO.transform.position = new Vector3(0f, 0.9f, -3.5f);
+        // Spawn fuera de la casa, frente al sendero — lejos del pad de teletransporte (Z=-2)
+        playerGO.transform.position = new Vector3(0f, 0.5f, -5.5f);
         playerGO.tag = "Player";
 
         var cc = playerGO.AddComponent<CharacterController>();

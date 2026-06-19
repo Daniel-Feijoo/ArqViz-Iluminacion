@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Events;
 
 /// <summary>
 /// MECÁNICA 1 — TRIGGER
 /// El jugador entra a la zona y tras 1.5s se teletransporta al destino.
 /// Se muestra barra de progreso en pantalla.
+/// UnityEvent: onTeleport se dispara al completar el teletransporte.
 /// </summary>
 public class ZonaTeleporte : MonoBehaviour
 {
@@ -13,6 +15,9 @@ public class ZonaTeleporte : MonoBehaviour
 
     [Header("Configuración")]
     public float tiempoActivacion = 1.5f;
+
+    [Header("Eventos")]
+    public UnityEvent onTeleport;
 
     bool  jugadorDentro   = false;
     float tiempoAcumulado = 0f;
@@ -56,6 +61,12 @@ public class ZonaTeleporte : MonoBehaviour
         if (cc != null) cc.enabled = false;
         player.transform.position = posicionDestino;
         if (cc != null) cc.enabled = true;
+
+        // Notificar al GameManager (directo + UnityEvent para Inspector)
+        if (GameManager.Instance != null)
+            GameManager.Instance.RegistrarZonaVisitada();
+
+        onTeleport?.Invoke();
     }
 
     void OnGUI()

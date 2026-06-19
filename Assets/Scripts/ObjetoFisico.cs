@@ -38,6 +38,10 @@ public class ObjetoFisico : MonoBehaviour
 
         activado = true;
 
+        // Notificar al GameManager
+        if (GameManager.Instance != null)
+            GameManager.Instance.RegistrarObjetoFisico();
+
         // Liberar física y aplicar impulso aleatorio a cada objeto
         foreach (var rb in rbs)
         {
